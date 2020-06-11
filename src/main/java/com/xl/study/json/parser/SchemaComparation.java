@@ -15,8 +15,8 @@ public class SchemaComparation {
 
 	@SuppressWarnings("deprecation")
 	public static void main(String[] args) throws IOException {
-		File oldVersion = new File("src/global_mapping_v6.2.json");
-		File newVersion = new File("src/global_mapping.json");
+		File oldVersion = new File("src/global_mapping_v6.2.2.json");
+		File newVersion = new File("src/global_mapping_v6.2.5.json");
 		File resultFile = new File("src/schema_change.txt");
 
 		FileUtils.write(resultFile, "\n----Schema Change Summary Start----\r\n", true);
